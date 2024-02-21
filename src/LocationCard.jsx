@@ -1,3 +1,5 @@
+import locationPin from "./assets/location_pin.svg";
+
 export default function LocationCard(props) {
   return (
     <section className="flex mx-auto gap-6 text-red-900 items-center w-2/3">
@@ -8,11 +10,7 @@ export default function LocationCard(props) {
       />
       <div className="flex flex-col gap-2">
         <div className="flex items-center gap-2">
-          <img
-            src="./src/assets/location_pin.svg"
-            alt="A red Location Pin"
-            className="h-3"
-          />
+          <img src={locationPin} alt="A red Location Pin" className="h-3" />
           <h3 className="uppercase tracking-[.25rem]">{props.location}</h3>
           <a
             href={props.googleMapsUrl}
