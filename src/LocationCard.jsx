@@ -15,6 +15,7 @@ export default function LocationCard(props) {
           <a
             href={props.googleMapsUrl}
             className="text-xs text-red-500 underline"
+            target="_blank"
           >
             <p>View on Google Maps</p>
           </a>
